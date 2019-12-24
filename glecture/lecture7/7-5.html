@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var now= new Date();
+    document.write(`${now.toUTCString}<br><hr>`);
+
+    var array =new Array();
+    array[0]=now.getFullYear();
+    array[1]=now.getMonth();
+    array[2]=now.getDate();
+    array[3]=now.getHours();
+    array[4]=now.getMinutes();
+    array[5]=now.getSeconds();
+    array[6]=now.getMilliseconds();
+    
+    console.log(`${array}`);
+    </script>
+</body>
+</html>

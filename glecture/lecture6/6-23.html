@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<script>
+    function evalPasrseIntIsNaN(){
+        var res = eval("2*3+4*6");
+        document.write(`eval(\"2*3+4*6\")는 ${res}<br>`);
+        var m =parseInt("a");
+document.write(`parseInt(\"a\")는 ${m}<br>`);
+        var n = parseInt("0x32");
+document.write(`parseInt(\"0x32\")는 ${n}<br>`);
+
+n= parseInt("hello");
+if(isNaN(n))
+document.write("hello는 숫자가 아닙니다.<br>")
+
+}
+
+evalPasrseIntIsNaN2=()=>{
+    var res = eval("2*3+4*6");
+        document.write(`eval(\"2*3+4*6\")는 ${res}222222222<br>`);
+        var m =parseInt("a");
+document.write(`parseInt(\"a\")는 ${m}<br>`);
+        var n = parseInt("0x32");
+document.write(`parseInt(\"0x32\")는 ${n}<br>`);
+
+n= parseInt("hello");
+if(isNaN(n))
+document.write("hello는 숫자가 아닙니다222222222.<br>")
+
+}
+
+</script>
+</head>
+<body>
+    <script>evalPasrseIntIsNaN();
+    evalPasrseIntIsNaN2();
+    </script>
+</body>
+</html>
